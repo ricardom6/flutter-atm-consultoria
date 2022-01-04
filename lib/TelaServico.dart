@@ -10,7 +10,7 @@ class _TelaServicoState extends State<TelaServico> {
   Widget build(BuildContext context) {
     return  Scaffold(
         appBar: AppBar(
-          title: Text("Serviços"),
+          title: Text("Cabos"),
           backgroundColor: Colors.green,
 
         ),
@@ -18,35 +18,24 @@ class _TelaServicoState extends State<TelaServico> {
           child: Container(
             padding: EdgeInsets.all(15),
             child: Column(
-                crossAxisAlignment: CrossAxisAlignment.start,
-                children: <Widget>[
-                Row(
+              children: <Widget>[
+                Column(
                   children: <Widget>[
-                    Image.asset("images/detalhe_servico.png"),
                     Text(
-                      "Nossos Serviços",
+                      "Consumo suportada:",
                       style: TextStyle(
                           fontSize: 20,
+                          color: Colors.blue[900]
                       ),
-                    )
+                    ),
+                    Image.asset("images/tabelaCorrenteCabos.jpeg"),
                   ],
                 ),
                 Padding(
                   padding: EdgeInsets.only(top: 16),
                   child:  Text(
-                      "Consultoria"
-                  ),
-                ),
-                Padding(
-                  padding: EdgeInsets.only(top: 16),
-                  child:  Text(
-                      "Cálculo de preços"
-                  ),
-                ),
-                Padding(
-                  padding: EdgeInsets.only(top: 16),
-                  child:  Text(
-                      "Acompanhamento de projetos"
+                      "Dados inseridos com base na NBR 5410:2004"
+
                   ),
                 )
 

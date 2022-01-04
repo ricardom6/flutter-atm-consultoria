@@ -26,7 +26,7 @@ class _TelaContatoState extends State<TelaContato> {
                     Text(
                       "Contato",
                       style: TextStyle(
-                          fontSize: 20,
+                        fontSize: 20,
                       ),
                     )
                   ],
@@ -34,19 +34,19 @@ class _TelaContatoState extends State<TelaContato> {
                 Padding(
                   padding: EdgeInsets.only(top: 16),
                   child:  Text(
-                      "E-mail: consultoria@atm.com.br"
+                      "E-mail: contato@m6.com.br"
                   ),
                 ),
                 Padding(
                   padding: EdgeInsets.only(top: 16),
                   child:  Text(
-                      "Telefone: (11) 3441-2321"
+                      "Telefone: (62) 3248-0323"
                   ),
                 ),
                 Padding(
                   padding: EdgeInsets.only(top: 16),
                   child:  Text(
-                      "Celular: (11) 9 9645-2212"
+                      "Whatsapp: (62) 3248-0323"
                   ),
                 )
 

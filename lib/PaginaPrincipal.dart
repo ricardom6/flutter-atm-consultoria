@@ -36,6 +36,12 @@ class _PaginaPrincipalState extends State<PaginaPrincipal> {
         MaterialPageRoute(builder: (context) => TelaContato())
     );
   }
+  /*void _abrirWebTeste(){
+    Navigator.push(
+        context,
+        MaterialPageRoute(builder: (context) => WebViewExample())
+    );
+  }*/
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -47,10 +53,10 @@ class _PaginaPrincipalState extends State<PaginaPrincipal> {
       //============================
       body: SingleChildScrollView(
         child: Container(
-        padding: EdgeInsets.all(60),
+        padding: EdgeInsets.all(20),
         child: Column(
           children: <Widget>[
-            Image.asset("images/logo.png"),
+            Image.asset("images/logo2.png"),
             Padding (
               padding: EdgeInsets.only(top: 30),
               child: Row(
@@ -62,8 +68,12 @@ class _PaginaPrincipalState extends State<PaginaPrincipal> {
                   ),
 
               ],
-
-            )
+            ),
+            ),
+            Text(
+              "Corrente nominal de motores.",
+              style: TextStyle(fontWeight: FontWeight.bold),
+              textScaleFactor: 1,
             ),
             Padding (
                 padding: EdgeInsets.only(top: 30),
@@ -74,11 +84,14 @@ class _PaginaPrincipalState extends State<PaginaPrincipal> {
                       onTap: _abrirServico,
                       child: Image.asset("images/menu_servico.png"),
                     ),
-
                   ],
-
-                )
+                ),
             ),
+              Text(
+                "Capacidade de corrente dos cabos.",
+                style: TextStyle(fontWeight: FontWeight.bold),
+                textScaleFactor: 1,
+              ),
             Padding (
                 padding: EdgeInsets.only(top: 30),
                 child: Row(
