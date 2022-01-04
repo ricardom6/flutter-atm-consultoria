@@ -40,10 +40,13 @@ class _PaginaPrincipalState extends State<PaginaPrincipal> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text("ATM Consultoria"),
+        title: Text("M6 Automação"),
         backgroundColor: Colors.green,
       ),
-      body: Container(
+
+      //============================
+      body: SingleChildScrollView(
+        child: Container(
         padding: EdgeInsets.all(60),
         child: Column(
           children: <Widget>[
@@ -57,10 +60,6 @@ class _PaginaPrincipalState extends State<PaginaPrincipal> {
                     onTap: _abrirEmpresa,
                     child:  Image.asset("images/menu_empresa.png"),
                   ),
-                  GestureDetector(
-                    onTap: _abrirServico,
-                    child: Image.asset("images/menu_servico.png"),
-                  ),
 
               ],
 
@@ -72,9 +71,31 @@ class _PaginaPrincipalState extends State<PaginaPrincipal> {
                   mainAxisAlignment: MainAxisAlignment.spaceEvenly,
                   children: <Widget>[
                     GestureDetector(
+                      onTap: _abrirServico,
+                      child: Image.asset("images/menu_servico.png"),
+                    ),
+
+                  ],
+
+                )
+            ),
+            Padding (
+                padding: EdgeInsets.only(top: 30),
+                child: Row(
+                  mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+                  children: <Widget>[
+                    GestureDetector(
                       onTap: _abrirCliente,
                       child:  Image.asset("images/menu_cliente.png"),
                     ),
+                  ],
+                )
+            ),
+            Padding (
+                padding: EdgeInsets.only(top: 30),
+                child: Row(
+                  mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+                  children: <Widget>[
                     GestureDetector(
                       onTap: _abrirContato,
                       child: Image.asset("images/menu_contato.png"),
@@ -82,8 +103,13 @@ class _PaginaPrincipalState extends State<PaginaPrincipal> {
                   ],
                 )
             ),
+
+
+
+
           ],
         ),
+      ),//fim do container-singleview...
       ),
     );
   }
